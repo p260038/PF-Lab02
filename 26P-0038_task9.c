@@ -4,7 +4,7 @@ int main()
 double basic_salary = 85000.00;
 double HRA=0.20*basic_salary;
 double MA=0.10*basic_salary;
-double gross_ salary=basic_salary + HRA+MA;
+double gross_salary=basic_salary + HRA+MA;
 double tax_deduction=0.05*gross_salary;
 double net_salary=gross_salary-tax_deduction;
 printf("============MONTHLY SALARY SLIP============\n");
