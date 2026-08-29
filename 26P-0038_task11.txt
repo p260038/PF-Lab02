@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+int qty_tea=3;
+float tea_price=60.00;
+int qty_samosa=4;
+float samosa_price=40.50;
+int qty_chicken_roll=2;
+float chicken_roll_price=120.00;
+float subtotal_tea=qty_tea*tea_price;
+float subtotal_samosa=qty_samosa*samosa_price;
+float subtotal_chicken_roll=qty_chicken_roll*chicken_roll_price;
+float bill_subtotal=subtotal_tea+subtotal_samosa+subtotal_chicken_roll;
+float GST=0.16*bill_subtotal;
+float grand_total=bill_subtotal+GST;
+printf("=================FAST CAFETERIA RECEIPT=================\n");
+printf("Iteam\t\tQty\t Unit Price (PKR)\tsubtotal (PKR)\n");
+printf("--------------------------------------------------------\n");
+printf("Tea\t\t%d\t\t%.2f\t\t\t%.2f\n",qty_tea,tea_price,subtotal_tea);
+printf("Samosa\t%d\t\t%.2f\t\t\t\t%.2f\n",qty_samosa,samosa_price,subtotal_samosa);
+printf("Chicken Roll   %d\t%.2f\t\t\t\t%.2f\n",qty_chicken_roll,chicken_roll_price,subtotal_chicken_roll);
+printf("---------------------------------------------------------\n");
+printf("Subtotal:\t\t\t\t PKR %.2f\n",bill_subtotal);
+printf("GST (16%%):\t\t\t\tPKR %.2f\n",GST);
+printf("--------------------------------------------------------\n");
+printf("Grand Total:\t\t\t\tPKR %.2f\n",grand_total);
+printf("==================THANK YOU FOR YOUR VISIT==============\n");
+return 0;
+}
