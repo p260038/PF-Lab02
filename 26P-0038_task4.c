@@ -5,7 +5,7 @@ int main()
 	int var2=42;
 	float var3=3.141590;
 	double var4=98.765432;
-	printf("Type Name\tVariable Value\tSize in Memory\n\n");
+	printf("Type Name\tVariable Value\tSize in Memory\n");
 
 	printf("-------------------------------------------------------------\n");
 	printf("char\t\t '%c'\t\t%zu byte(s)\n",var1,sizeof(var1));
